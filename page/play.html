@@ -1,0 +1,31 @@
+<div class="header">
+  <div class="datas-return">
+    <a href="#/datas/{{pid}}"><i class="glyphicon glyphicon-arrow-left"></i></a>
+  </div>Movie Play
+</div>
+<div class="header-hide"></div>
+<div class="container">
+  <div class="row seek-row">
+    <div class="col-sm-12">
+      <div class="seek-content datas-content">
+        <h3>Top{{pid}}: {{pname}}</h3>
+        <div class="move-grade">
+          <i class="glyphicon glyphicon-star"></i>{{pgrade}}
+        </div>
+        <hr/>
+        <p><b>Director: </b>{{pdirector}}</p>
+        <p><b>Stars: </b>{{pstars}}</p>
+        <video width="100%" height="" controls>
+          <source src="./movie/1.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 video 标签。
+        </video>
+        <p><b>Storyline: </b>{{pstoryline}}</p>
+        <hr/>
+        <a href="#/datas/{{pid}}">Return</a>
+        <!-- <a href="#/play/{{pid}}">Play</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="footer-hide"></div>
+<div ng-include="footerUrl"></div> -->

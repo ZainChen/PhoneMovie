@@ -1,0 +1,36 @@
+<div class="header">IMDb Top250 Seek <i class="glyphicon glyphicon-search"></i></div>
+<div class="header-hide"></div>
+<div class="container">
+  <div class="row seek-row">
+    <div class="col-sm-12">
+      <div class="seek-content">
+        <div class="seek-head">
+          <form action="">
+            <input class="seek-bt1" type="text">
+            <!-- <input id="seek-bt2" class="seek-bt2" type="submit" value=""> -->
+            <div class="seek-div2"><i class="glyphicon glyphicon-search"></i></div>
+          </form>
+        </div>
+        <div class="seek-main">
+          <a ng-repeat="i in emps" href="#/datas/{{i.id}}">
+            <div class="move">
+              <div class="move-img">
+                <img ng-src="./image/seek/{{i.img1}}" alt="">
+              </div>
+              <div class="move-intro">
+                <div class="move-grade">
+                  <i class="glyphicon glyphicon-star"></i>{{i.grade}}
+                </div>
+                <h4><b>Top{{i.id}}: {{i.name}}</b></h4>
+                <h5>Stars: {{i.stars}}</h5>
+                <p>Info: {{i.info}}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-hide"></div>
+<div ng-include="footerUrl"></div>

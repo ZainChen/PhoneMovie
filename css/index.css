@@ -1,0 +1,349 @@
+@font-face {  /*引用外部字体*/
+  font-family: Menlo; /*这里是说明调用来的字体名字*/ 
+  src: url('../fonts/msyh.ttf'); /*这里是字体文件路径*/ 
+}
+@font-face {  /*引用外部字体*/
+  font-family: msyh; /*这里是说明调用来的字体名字*/ 
+  src: url('../fonts/msyh.ttf'); /*这里是字体文件路径*/ 
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Menlo";
+}
+/*====header.html====*/
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 70px;
+  font-family: "Menlo";
+  background: #575757;
+  color: #fff;
+}
+.header-hide {
+  height: 70px;
+  background: yellow;
+}
+/*====footer.html====*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #222;
+}
+.footer > div {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+}
+.footer i {
+  display: block;
+  margin-top: 5px;
+  font-size: 25px;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+.footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/*====home.html====*/
+.home-content {
+  width: 100%;
+  text-align: center;
+  background: #eee;
+}
+.home-a {
+  color: #666;
+}
+.home-a:hover {
+  text-decoration: none;
+  color: #666;
+}
+.home-img2 {
+  width: 45%;
+}
+.footer-hide {
+  height: 50px;
+}
+/*====seek.html====*/
+.seek-content {
+  margin:auto;
+  width: 100%;
+  /*background: #ddd;*/
+}
+.seek-head {
+  height: 65px;
+}
+.seek-head input {
+  outline: none;  /*可去除选中后边框样式*/
+  float: left;
+  margin-top: 15px;
+  font-family: "msyh";
+  height: 35px;
+}
+.seek-bt1 {
+  width: 90%;
+  border-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*.seek-bt2 {
+  width: 10%;
+  font-size: 1.2em;
+  background: #999;
+  color: #fff;
+}*/
+.seek-div2 {
+  float: left;
+  width: 10%;
+  height: 35px;
+  margin-top: 15px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "msyh";
+  color: #fff;
+  background: #777;
+  border: 2px outset #9A9A9A;
+  transition: 0.3s;
+}
+.seek-div2:hover {
+  cursor: pointer;
+  background: #9A9A9A;
+}
+.seek-div2 i {
+
+}
+.seek-main {
+}
+.seek-main a {
+  color: #555;
+}
+.seek-main a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.seek-main .move {
+  height: 150px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+.seek-main .move:hover {
+  background: #eee;
+}
+.seek-main .move-img {
+  float: left;
+  height: 100%;
+}
+.seek-main img {
+  height: 140px;
+  width: 95px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.seek-main .move-intro {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 120px;
+  margin-top: 15px;
+}
+.move-intro h4 b {
+  font-size: 14px;
+  color: #222;
+}
+.move-intro p {
+  line-height: 15px;
+}
+.move-intro .move-grade {
+  float: right;
+  width: 65px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+}
+.move-intro .move-grade i {
+  font-size: 25px;
+  color: #E4BB24;
+}
+/*====datas.html====*/
+.datas-content img {
+  width: 49%;
+}
+.datas-content a {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 4px #000;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #aaa;
+  color: #fff;
+  transition: 0.3s;
+}
+.datas-content .move-grade {
+  line-height: 10px;
+  font-size: 25px;
+}
+.datas-content .move-grade i {
+  font-size: 30px;
+  color: #E4BB24;
+}
+.datas-content a:hover {
+  text-decoration: none;
+  box-shadow: 0 0 6px #000;
+  border-radius: 8px;
+  font-size: 20px;
+  background: #888;
+  color: #eee;
+}
+.datas-return {
+  position: absolute;
+}
+.datas-return a {
+  margin-left: 10px;
+  font-size: 40px;
+  line-height: 70px;
+  color: #ddd;
+}
+.datas-return a:hover {
+  color: #fff;
+}
+/*====user.html====*/
+.user {
+  height: 800px;
+}
+.user-info {
+  overflow: hidden;
+  width: 100%;
+  height: 415px;
+  margin-top: 2px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  text-align: center;
+}
+.user-info img {
+  width: 220px;
+  margin-top: 30px;
+  border-radius: 110px;
+}
+.user-info div {
+  width: 100%;
+  height: 50px;
+  background: #35434F;
+}
+.user-info-set {
+  border-bottom: 1px solid #000;
+}
+.user-info-share:hover {
+  cursor: pointer;
+}
+.user-info a:hover {
+  text-decoration: none;
+}
+.user-info p {
+  line-height: 49px;
+  font-size: 15px;
+  text-align: center;
+  color: #DEDDDD;
+}
+.user-info p:hover {
+  color: #fff;
+  background: #2B3844;
+}
+.user-set {
+  overflow: hidden;
+  width: 100%;
+  /*height: 415px;*/
+  margin-top: 2px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  text-align: center;
+  background: #444;
+}
+.user-set:hover {
+  background: #333;
+}
+.user-set-name {
+  width: 100%;
+  height: 65px;
+  /*background: #555;*/
+}
+.user-set-name p {
+  font-size: 22px;
+  line-height: 65px;
+  color: #eee;
+}
+.user-set-name p:hover {
+  color: #fff;
+}
+.user-set-language {
+  width: 100%;
+  background: #fff;
+}
+.user-set-language div {
+  display: inline-block;
+  height: 220px;
+  width: 220px;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 110px;
+  background: #ccc;
+  line-height: 220px;
+  font-size: 100px;
+  text-align: center;
+  transition: 0.3s;
+}
+.user-set-language div:hover {
+  color: #fff;
+}
+.user-set-language .set-en {
+  background: #E44B23;
+  color: #FFF6D4;
+  box-shadow: inset 0 0 100px #000;
+}
+.user-set-language .set-ch {
+  margin-bottom: 5px;
+  background: #563D7C;
+  color: #F6E3FF;
+}
+/*====user_edit.html====*/
+.user-edit {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.user-edit header {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #333;
+  background: #F5F5F5;
+}
+.user-edit form {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.user-edit h5 {
+  font-size: 15px;
+  margin-top: 15px;
+  color: #555;
+}
